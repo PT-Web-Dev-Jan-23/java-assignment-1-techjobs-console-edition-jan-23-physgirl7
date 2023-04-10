@@ -9,6 +9,7 @@ import java.nio.file.Path;
 import java.util.Scanner;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Created by LaunchCode
@@ -43,6 +44,7 @@ public class TechJobsTest {
         String output = runProgramWithInput(input);
         String expected = getFileContents("src/test/resources/testPrintJobs.txt");
         assertEquals(expected, output);
+
     }
 
     @Test
